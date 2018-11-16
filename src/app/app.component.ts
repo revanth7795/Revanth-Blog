@@ -59,7 +59,12 @@ export class AppComponent implements OnInit{
 
   onComment(){
     console.log(this.userName+"  "+this.userEmail+"  "+this.userComments);
-    alert("Sent Successfully!");
+    if(this.userName && this.userEmail && this.userComments){
+      alert("Sent Successfully!");
+    }else{
+      alert("Warning: Please Enter all fields");
+    }
+    
     this.userName="";
     this.userEmail="";
     this.userComments="";
