@@ -61,14 +61,13 @@ export class AppComponent implements OnInit{
     console.log(this.userName+"  "+this.userEmail+"  "+this.userComments);
     if(this.userName && this.userEmail && this.userComments){
       alert("Sent Successfully!");
+      this.userName="";
+      this.userEmail="";
+      this.userComments="";
     }else{
       alert("Warning: Please Enter all fields");
     }
     
-    this.userName="";
-    this.userEmail="";
-    this.userComments="";
-
   }
 
 }

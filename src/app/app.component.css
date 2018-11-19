@@ -37,7 +37,7 @@
   }
   
   .fa-google:hover {
-    background: #dd4b39;
+    background: #dc4c3f;
     color: white;
     transform: scale(1.1);
   }
@@ -70,7 +70,7 @@
   }
   
   .fa-git:hover {
-    background: #dd4b39;
+    background: #e64f31;
     color: white;
     transform: scale(1.1);
   }
