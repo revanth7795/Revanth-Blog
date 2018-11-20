@@ -80,3 +80,22 @@
     -webkit-transition: height .5s;
     transition: height .5s;
   }
+
+  .dvContainer {
+    position: relative;
+  }
+  
+  .dvInsideTL {
+    position: absolute;
+    top: 3000px;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .loadmore{
+    position: absolute;  
+    width: 100%; 
+    text-align: center; 
+    color: black;
+    background-image: linear-gradient(#2d2d2f00, #2d2d2f);
+  }

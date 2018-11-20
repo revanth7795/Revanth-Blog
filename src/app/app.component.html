@@ -79,170 +79,178 @@
     </div>
     
     <!-- Container (The Photos Section) -->
-    <div id="photos">
+    <div id="photos" class="dvContainer">
       <div class="container text-center">
       <h3>PHOTOS</h3>
       <h2>Photography is the story, I fail to put into words.</h2>
     </div>
       <div class="row" style="margin: 0 auto">
-          <iframe src='https://www.juicer.io/api/feeds/revanth7795/iframe' frameborder='' width='100%' height='4220' style='display:block;margin:0 auto;'></iframe>
+          <iframe src='https://www.juicer.io/api/feeds/revanth7795/iframe' frameborder='' width='100%' height='4250' style='display:block;margin:0 auto;'></iframe>
       </div>
-    </div>
-    
-    <!-- Container (Travel Section) -->
-    <div id="travel" class="bg-1">
-      <div class="container">
-        <h3 class="text-center">TRAVEL DATES</h3>
-        <br>
-        <!-- <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
-        <ul class="list-group">
-          <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-          <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
-          <li class="list-group-item">November <span class="badge">3</span></li> 
-        </ul>
-        
-        <div class="row text-center">
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="../assets/images/paris.jpg" alt="Paris" width="400" height="300">
-              <p><strong>Paris</strong></p>
-              <p>Friday 27 November 2015</p>
-              <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="../assets/images/newyork.jpg" alt="New York" width="400" height="300">
-              <p><strong>New York</strong></p>
-              <p>Saturday 28 November 2015</p>
-              <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="thumbnail">
-              <img src="../assets/images/sanfran.jpg" alt="San Francisco" width="400" height="300">
-              <p><strong>San Francisco</strong></p>
-              <p>Sunday 29 November 2015</p>
-              <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-            </div>
-          </div>
-        </div> -->
-        <div style="text-align:center">
-          <h2>Some Interesting stuff is comming soon... </h2>
-          <p style="color:red">Please check back this section later.</p>
-        </div>
-      </div>
+      <div class="loadmore" [style.top]="loadTop + 'px'"><img id="arrowID" style="cursor:pointer" src="../assets/images/down arrow.png"  (click)="loadmore()" alt="Aquarium" width="150" height="100"></div>
       
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">x</button>
-              <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+      <div class="dvInsideTL" [style.top]="divTop + 'px'">
+        <!-- Container (Travel Section) -->
+        <div id="travel" class="bg-1">
+          <div class="container">
+            <h3 class="text-center">TRAVEL DATES</h3>
+            <br>
+            <!-- <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+            <ul class="list-group">
+              <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+              <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
+              <li class="list-group-item">November <span class="badge">3</span></li> 
+            </ul>
+            
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <img src="../assets/images/paris.jpg" alt="Paris" width="400" height="300">
+                  <p><strong>Paris</strong></p>
+                  <p>Friday 27 November 2015</p>
+                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <img src="../assets/images/newyork.jpg" alt="New York" width="400" height="300">
+                  <p><strong>New York</strong></p>
+                  <p>Saturday 28 November 2015</p>
+                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div class="thumbnail">
+                  <img src="../assets/images/sanfran.jpg" alt="San Francisco" width="400" height="300">
+                  <p><strong>San Francisco</strong></p>
+                  <p>Sunday 29 November 2015</p>
+                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                </div>
+              </div>
+            </div> -->
+            <div style="text-align:center">
+              <h2>Some Interesting stuff is comming soon... </h2>
+              <p style="color:red">Please check back this section later.</p>
             </div>
-            <div class="modal-body">
-              <form role="form">
-                <div class="form-group">
-                  <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
-                  <input type="number" class="form-control" id="psw" placeholder="How many?">
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">x</button>
+                  <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
                 </div>
-                <div class="form-group">
-                  <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
-                  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                <div class="modal-body">
+                  <form role="form">
+                    <div class="form-group">
+                      <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+                      <input type="number" class="form-control" id="psw" placeholder="How many?">
+                    </div>
+                    <div class="form-group">
+                      <label for="usrname"><span class="glyphicon glyphicon-user"></span> Send To</label>
+                      <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                    </div>
+                      <button type="submit" class="btn btn-block">Pay 
+                        <span class="glyphicon glyphicon-ok"></span>
+                      </button>
+                  </form>
                 </div>
-                  <button type="submit" class="btn btn-block">Pay 
-                    <span class="glyphicon glyphicon-ok"></span>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+                    <span class="glyphicon glyphicon-remove"></span> Cancel
                   </button>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                <span class="glyphicon glyphicon-remove"></span> Cancel
-              </button>
-              <p><a href="#">Need help?</a></p>
+                  <p><a href="#">Need help?</a></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Container (The About Section) -->
-    <div id="about" class="container text-center">
-      <h3>About ME</h3>
-      <p><em>Programmer by Profession.. <em style="font-weight: bold;">Photographer</em> by passion!!</em></p>
-      <p>I am Revanth, a Programmer who is very much interested in Photography by passion. That's how it made me to develop a website which showcases my photography skills.</p>
-      <br>
-      <div class="row" style="margin: 0 auto">
-
-          <img href="#myPage" src="../assets/images/Revanth logo1.png" alt="name" width="191" height="50"><br>
-          <a href="#demo4" data-toggle="collapse">
-            <img src="../assets/images/bandmember.jpg" class="img-circle person" alt="Random Name" width="70" height="70">
-          </a>
-            <div id="demo4" class="block" [style.height]="height + 'px'" #my>
-              <p>Traveller</p>
-              <p>Photographer</p>
-      
-              <a href="https://www.facebook.com/revanth.reddy.9822" target="_blank" data-toggle="tooltip" title="visit my facebook"  class="fa fa-facebook"></a>
-              <a href="https://twitter.com/revanth070795" target="_blank" data-toggle="tooltip" title="visit my twitter"  class="fa fa-twitter"></a>
-              <a href="https://plus.google.com/+revanthreddy7795" target="_blank" data-toggle="tooltip" title="visit my google-plus"  class="fa fa-google"></a>
-              <a href="https://www.instagram.com/revanth7795/" target="_blank" data-toggle="tooltip" title="visit my instagram"  class="fa fa-instagram"></a>
-              <a href="https://github.com/revanth7795" target="_blank" data-toggle="tooltip" title="visit my github" class="fa fa-git"></a>
-              <a href="mailto:revanth.bogala123@gmail.com" target="_blank" data-toggle="tooltip" title="send mail to me" class="fa fa-envelope"></a>
-            </div>
-      </div>
-    </div>
     
-    <!-- Container (Contact Section) -->
-    <div id="contact" class="container">
-      <h3 class="text-center">Contact</h3>
-    
-      <div class="row">
-        <div class="col-md-4">
-          <p>Fan? Drop a note.</p>
-          <p><span class="glyphicon glyphicon-map-marker"></span>Bangalore, India</p>
-          <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9908846632</p>
-          <p><span class="glyphicon glyphicon-envelope"></span> Email: revanth.bogala123@gmail.com</p>
-        </div>
-        <div class="col-md-8">
-          <!-- <div class="row">
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="name" name="name" [(ngModel)]="userName" placeholder="Name" type="text" required>
-            </div>
-            <div class="col-sm-6 form-group">
-              <input class="form-control" id="email" name="email" [(ngModel)]="userEmail" placeholder="Email" type="email" required>
-            </div>
-          </div>
-          <textarea class="form-control" id="comments" name="comments" [(ngModel)]="userComments" placeholder="Comment" rows="5"></textarea>
+        <!-- Container (The About Section) -->
+        <div id="about" class="container text-center">
+          <h3>About ME</h3>
+          <p><em>Programmer by Profession.. <em style="font-weight: bold;">Photographer</em> by passion!!</em></p>
+          <p>I am Revanth, a Programmer who is very much interested in Photography by passion. That's how it made me to develop a website which showcases my photography skills.</p>
           <br>
-          <div class="row">
-            <div class="col-md-12 form-group">
-              <button class="btn pull-right" type="submit" (click)="onComment()">Send</button>
-            </div>
-          </div> -->
-          <app-disqus></app-disqus>
+          <div class="row" style="margin: 0 auto">
+    
+              <img href="#myPage" src="../assets/images/Revanth logo1.png" alt="name" width="191" height="50"><br>
+              <a href="#demo4" data-toggle="collapse">
+                <img src="../assets/images/bandmember.jpg" class="img-circle person" alt="Random Name" width="70" height="70">
+              </a>
+                <div id="demo4" class="block" [style.height]="height + 'px'" #my>
+                  <p>Traveller</p>
+                  <p>Photographer</p>
+          
+                  <a href="https://www.facebook.com/revanth.reddy.9822" target="_blank" data-toggle="tooltip" title="visit my facebook"  class="fa fa-facebook"></a>
+                  <a href="https://twitter.com/revanth070795" target="_blank" data-toggle="tooltip" title="visit my twitter"  class="fa fa-twitter"></a>
+                  <a href="https://plus.google.com/+revanthreddy7795" target="_blank" data-toggle="tooltip" title="visit my google-plus"  class="fa fa-google"></a>
+                  <a href="https://www.instagram.com/revanth7795/" target="_blank" data-toggle="tooltip" title="visit my instagram"  class="fa fa-instagram"></a>
+                  <a href="https://github.com/revanth7795" target="_blank" data-toggle="tooltip" title="visit my github" class="fa fa-git"></a>
+                  <a href="mailto:revanth.bogala123@gmail.com" target="_blank" data-toggle="tooltip" title="send mail to me" class="fa fa-envelope"></a>
+                </div>
+          </div>
         </div>
+        
+        <!-- Container (Contact Section) -->
+        <div id="contact" class="container">
+          <h3 class="text-center">Contact</h3>
+        
+          <div class="row">
+            <div class="col-md-4">
+              <p>Fan? Drop a note.</p>
+              <p><span class="glyphicon glyphicon-map-marker"></span>Bangalore, India</p>
+              <p><span class="glyphicon glyphicon-phone"></span>Phone: +91 9908846632</p>
+              <p><span class="glyphicon glyphicon-envelope"></span> Email: revanth.bogala123@gmail.com</p>
+            </div>
+            <div class="col-md-8">
+              <!-- <div class="row">
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="name" name="name" [(ngModel)]="userName" placeholder="Name" type="text" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                  <input class="form-control" id="email" name="email" [(ngModel)]="userEmail" placeholder="Email" type="email" required>
+                </div>
+              </div>
+              <textarea class="form-control" id="comments" name="comments" [(ngModel)]="userComments" placeholder="Comment" rows="5"></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right" type="submit" (click)="onComment()">Send</button>
+                </div>
+              </div> -->
+              <app-disqus></app-disqus>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+          <div class="text-center">
+              <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Go to TOP">
+                  <span class="glyphicon glyphicon-chevron-up"></span>
+                </a><br><br>
+                <p>Revanth Bogala ©2018 </p>       
+    
+                <a href="https://www.facebook.com/revanth.reddy.9822" target="_blank" data-toggle="tooltip" title="visit my facebook"  class="fa fa-facebook"></a>
+                <a href="https://twitter.com/revanth070795" target="_blank" data-toggle="tooltip" title="visit my twitter"  class="fa fa-twitter"></a>
+                <a href="https://plus.google.com/+revanthreddy7795" target="_blank" data-toggle="tooltip" title="visit my google-plus"  class="fa fa-google"></a>
+                <a href="https://www.instagram.com/revanth7795/" target="_blank" data-toggle="tooltip" title="visit my instagram"  class="fa fa-instagram"></a>
+                <a href="https://github.com/revanth7795" target="_blank" data-toggle="tooltip" title="visit my github" class="fa fa-git"></a>
+                <a href="mailto:revanth.bogala123@gmail.com" target="_blank" data-toggle="tooltip" title="send mail to me" class="fa fa-envelope"></a>
+        
+          </div>
+         </footer>
       </div>
     </div>
-    
-    <!-- Footer -->
-    <footer>
-      <div class="text-center">
-          <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Go to TOP">
-              <span class="glyphicon glyphicon-chevron-up"></span>
-            </a><br><br>
-            <p>Revanth Bogala ©2018 </p>       
 
-            <a href="https://www.facebook.com/revanth.reddy.9822" target="_blank" data-toggle="tooltip" title="visit my facebook"  class="fa fa-facebook"></a>
-            <a href="https://twitter.com/revanth070795" target="_blank" data-toggle="tooltip" title="visit my twitter"  class="fa fa-twitter"></a>
-            <a href="https://plus.google.com/+revanthreddy7795" target="_blank" data-toggle="tooltip" title="visit my google-plus"  class="fa fa-google"></a>
-            <a href="https://www.instagram.com/revanth7795/" target="_blank" data-toggle="tooltip" title="visit my instagram"  class="fa fa-instagram"></a>
-            <a href="https://github.com/revanth7795" target="_blank" data-toggle="tooltip" title="visit my github" class="fa fa-git"></a>
-            <a href="mailto:revanth.bogala123@gmail.com" target="_blank" data-toggle="tooltip" title="send mail to me" class="fa fa-envelope"></a>
     
-      </div>
-     </footer>
+    
+    
+    
 </div>
 

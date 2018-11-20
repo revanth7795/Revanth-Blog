@@ -13,6 +13,10 @@ export class AppComponent implements OnInit{
   userName:any;
   userEmail:any;
   userComments:any;
+  loadTop = 2900;
+  divTop= 3000;
+  tooltipString:any;
+  element: HTMLImageElement;
 
   ngOnInit(){
     
@@ -68,6 +72,22 @@ export class AppComponent implements OnInit{
       alert("Warning: Please Enter all fields");
     }
     
+  }
+
+  loadmore(){
+    if(this.loadTop== 2900){
+      setTimeout(() => {
+        this.loadTop = 4300;
+        this.divTop = 4400;
+        document.getElementById('arrowID').setAttribute( 'src', '../assets/images/up_arrow.png');
+      },300);
+    }else if (this.loadTop=4300){
+      setTimeout(() => {
+        this.loadTop = 2900;
+        this.divTop = 3000;
+        document.getElementById('arrowID').setAttribute( 'src', '../assets/images/down arrow.png');
+      },300);
+    }
   }
 
 }
