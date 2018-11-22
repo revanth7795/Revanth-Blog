@@ -16,6 +16,7 @@ export class AppComponent implements OnInit{
   loadTop = 2900;
   divTop= 3000;
   tooltipString:any;
+  arrowClass:any = "arrowDOWN";
   element: HTMLImageElement;
 
   ngOnInit(){
@@ -47,6 +48,7 @@ export class AppComponent implements OnInit{
           });
         } // End if
       });
+
     })
 
   }
@@ -80,12 +82,16 @@ export class AppComponent implements OnInit{
         this.loadTop = 4300;
         this.divTop = 4400;
         document.getElementById('arrowID').setAttribute( 'src', '../assets/images/up_arrow.png');
+        $('[data-toggle="arrowTooltip"]').attr("title","Show Less");
+        this.arrowClass = "arrowUP";
       },300);
     }else if (this.loadTop=4300){
       setTimeout(() => {
         this.loadTop = 2900;
         this.divTop = 3000;
         document.getElementById('arrowID').setAttribute( 'src', '../assets/images/down arrow.png');
+        $('[data-toggle="arrowTooltip"]').attr("title","Show More");
+        this.arrowClass = "arrowDOWN";
       },300);
     }
   }

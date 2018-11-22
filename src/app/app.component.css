@@ -99,3 +99,43 @@
     color: black;
     background-image: linear-gradient(#2d2d2f00, #2d2d2f);
   }
+
+  .arrowDown{
+    cursor: pointer;
+  }
+
+  .arrowDown:hover{
+    transform: translate(0px,15px);
+    animation-name: DownArrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes DownArrow {
+    0% {
+      transform: translate(0px,0px);
+    }
+    100% {
+      transform: skewY(0px,15px);
+    }
+  }
+
+  .arrowUp{
+    cursor: pointer;
+  }
+
+  .arrowUp:hover{
+    transform: translate(0px,-15px);
+    animation-name: UpArrow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes UpArrow {
+    0% {
+      transform: translate(0px,0px);
+    }
+    100% {
+      transform: skewY(0px,-15px);
+    }
+  }
