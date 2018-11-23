@@ -13,8 +13,8 @@ export class AppComponent implements OnInit{
   userName:any;
   userEmail:any;
   userComments:any;
-  loadTop = 2900;
-  divTop= 3000;
+  loadTop = 3200;
+  divTop= 3300;
   tooltipString:any;
   arrowClass:any = "arrowDOWN";
   element: HTMLImageElement;
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
     
     $(document).ready(function(){
       // Initialize Tooltip
-      //$("[data-toggle='tooltip']").tooltip(); 
+      // $("[data-toggle='tooltip']").tooltip(); 
       
       // Add smooth scrolling to all links in navbar + footer link
       $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -77,7 +77,7 @@ export class AppComponent implements OnInit{
   }
 
   loadmore(){
-    if(this.loadTop== 2900){
+    if(this.loadTop == 3200){
       setTimeout(() => {
         this.loadTop = 4300;
         this.divTop = 4400;
@@ -85,10 +85,10 @@ export class AppComponent implements OnInit{
         $('[data-toggle="arrowTooltip"]').attr("title","Show Less");
         this.arrowClass = "arrowUP";
       },300);
-    }else if (this.loadTop=4300){
+    }else if (this.loadTop ==4300){
       setTimeout(() => {
-        this.loadTop = 2900;
-        this.divTop = 3000;
+        this.loadTop = 3200;
+        this.divTop = 3300;
         document.getElementById('arrowID').setAttribute( 'src', '../assets/images/down arrow.png');
         $('[data-toggle="arrowTooltip"]').attr("title","Show More");
         this.arrowClass = "arrowDOWN";
