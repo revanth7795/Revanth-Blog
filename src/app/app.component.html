@@ -15,7 +15,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#myPage">HOME</a></li>
             <li><a href="#photos">PHOTOS</a></li>
-            <li><a href="#travel">TRAVEL</a></li>
+            <li><a href="#travel">TRAVEL <span class="label label-danger">New!</span></a></li>
             <li><a href="#about" (click)="onClickAbout(my.scrollHeight)">ABOUT</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <!-- <li class="dropdown">
@@ -94,44 +94,127 @@
         <div id="travel" class="bg-1">
           <div class="container">
             <h3 class="text-center">TRAVEL DATES</h3>
+            <h2 class="text-center">Travel till the last breath, make your soul happy..</h2>
+            <p class="text-center"> “Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts, it even breaks your heart. But that’s okay. The journey changes you. It leaves marks on your memory, on your consciousness, on your heart, and on your body. You take something with you. Hopefully, you leave something good behind.” <em style="font-weight: bold;">– Anthony Bourdain</em></p>
             <br>
-            <!-- <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
-            <ul class="list-group">
-              <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
-              <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
-              <li class="list-group-item">November <span class="badge">3</span></li> 
-            </ul>
-            
-            <div class="row text-center">
-              <div class="col-sm-4">
-                <div class="thumbnail">
-                  <img src="../assets/images/paris.jpg" alt="Paris" width="400" height="300">
-                  <p><strong>Paris</strong></p>
-                  <p>Friday 27 November 2015</p>
-                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+            <div id="accordion">
+
+              <ul class="list-group">
+                <li class="list-group-item collapsed" data-toggle="collapse" href="#lg1">June, 2016 <a class="badge"><span class="glyphicon glyphicon-ok"></span></a></li>
+                <div id="lg1" style="padding-top: 5px;" class="row text-center collapse">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Mysore.jpg" alt="Paris" width="400" height="300">
+                      <p><strong>Mysore</strong></p>
+                      <p>Monday 5th June 2016</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Shivasamudra.jpg" alt="San Francisco" width="400" height="300">
+                      <p><strong>Shivanasamudra Falls</strong></p>
+                      <p>Tuesday 6th June 2016</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Coorg1.jpg" alt="San Francisco" width="400" height="300">
+                      <p><strong>Coorg, Madikeri</strong></p>
+                      <p>Wednesday 7th June 2016</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="thumbnail">
-                  <img src="../assets/images/newyork.jpg" alt="New York" width="400" height="300">
-                  <p><strong>New York</strong></p>
-                  <p>Saturday 28 November 2015</p>
-                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+                <li class="list-group-item collapsed" data-toggle="collapse" href="#lg2">December, 2016 <a class="badge"><span class="glyphicon glyphicon-ok"></span></a></li>
+                <div id="lg2" style="padding-top: 5px;" class="row text-center collapse">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Ooty.jpg" alt="Paris" width="400" height="300">
+                      <p><strong>Ooty</strong></p>
+                      <p>Monday 26 December 2016</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Munnar.jpg" alt="New York" width="400" height="300">
+                      <p><strong>Munnar</strong></p>
+                      <p>Tuesday 27 December 2016</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Kochi.jpg" alt="San Francisco" width="400" height="300">
+                      <p><strong>Kochi</strong></p>
+                      <p>Wednesday 28 December 2016</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                </div> 
+                <li class="list-group-item" data-toggle="collapse" href="#lg3">May, 2018 <a class="badge"><span class="glyphicon glyphicon-ok"></span></a> </li>
+                <div id="lg3" style="padding-top: 5px;" class="row text-center collapse">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Athirapally.jpg" alt="Paris" width="400" height="300">
+                      <p><strong>Athirappilly Falls</strong></p>
+                      <p>Friday 18 May 2018</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Wayanad.jpg" alt="New York" width="400" height="300">
+                      <p><strong>Wayanad</strong></p>
+                      <p>Saturday 19 May 2018</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Coorg2.jpg" alt="San Francisco" width="400" height="300">
+                      <p><strong>Coorg</strong></p>
+                      <p>Sunday 20 May 2018</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                </div> 
+                <li class="list-group-item" data-toggle="collapse" href="#lg4">October, 2018 <a class="badge"><span class="glyphicon glyphicon-ok"></span></a> </li>
+                <div id="lg4" style="padding-top: 5px;" class="row text-center collapse">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Pondycherry.jpg" alt="Paris" width="400" height="300">
+                      <p><strong>Pondicherry</strong></p>
+                      <p>Saturday 13 October 2018</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Auroville.jpg" alt="New York" width="400" height="300">
+                      <p><strong>Auroville</strong></p>
+                      <p>Sunday 14 October 2018</p>
+                      <!-- <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button> -->
+                    </div>
+                  </div>
+                </div> 
+                <li class="list-group-item" data-toggle="collapse" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;" href="#lg5">December, 2018 <span class="label label-danger">Coming up</span> <span style="background-color:#d9534f" class="badge">1</span></li>
+                <div id="lg5" style="padding-top: 5px;" class="row text-center collapse">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <img src="../assets/images/Goa.jpg" alt="Paris" width="400" height="300">
+                      <p><strong>Goa</strong></p>
+                      <p>29th Dec 2018 to 1st Jan 2019</p>
+                      <button class="btn" data-toggle="modal" data-target="#myModal">Join Trip</button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="thumbnail">
-                  <img src="../assets/images/sanfran.jpg" alt="San Francisco" width="400" height="300">
-                  <p><strong>San Francisco</strong></p>
-                  <p>Sunday 29 November 2015</p>
-                  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
-                </div>
-              </div>
-            </div> -->
-            <div style="text-align:center">
-              <h2>Some Interesting stuff is comming soon... </h2>
-              <p style="color:red">Please check back this section later.</p>
+              </ul>
             </div>
+            
+
           </div>
           
           <!-- Modal -->
@@ -139,13 +222,13 @@
             <div class="modal-dialog">
             
               <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
+              <div class="modal-content" style="width: 660px;">
+                <div class="modal-header" style="width: 660px;">
                   <button type="button" class="close" data-dismiss="modal">x</button>
-                  <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+                  <h4><span class="glyphicon glyphicon-briefcase"></span> Travel</h4>
                 </div>
                 <div class="modal-body">
-                  <form role="form">
+                  <!-- <form role="form">
                     <div class="form-group">
                       <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
                       <input type="number" class="form-control" id="psw" placeholder="How many?">
@@ -157,14 +240,10 @@
                       <button type="submit" class="btn btn-block">Pay 
                         <span class="glyphicon glyphicon-ok"></span>
                       </button>
-                  </form>
+                  </form> -->
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1HtzqO2veeI9_8op3J5RGGgOeniSI5FIkP01tagsQJIHWZg/viewform?embedded=true" width="640" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
                 </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-                    <span class="glyphicon glyphicon-remove"></span> Cancel
-                  </button>
-                  <p><a href="#">Need help?</a></p>
-                </div>
+                
               </div>
             </div>
           </div>
