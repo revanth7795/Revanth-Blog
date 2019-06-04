@@ -5,11 +5,13 @@ import { DisqusModule } from 'ngx-disqus';
 
 import { AppComponent } from './app.component';
 import { DisqusComponent } from './disqus/disqus.component';
+import { BanneradComponent } from './bannerad/bannerad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DisqusComponent
+    DisqusComponent,
+    BanneradComponent
   ],
   imports: [
     BrowserModule,
